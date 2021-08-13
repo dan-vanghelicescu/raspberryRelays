@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Fiat aqua!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:;base64,=">
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css" >
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+
+    <script type="text/javascript">
+        window.onload = draw;
+        setInterval(refresh, 3000);
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid" id="header">
+        <div class="row">
+            <div class="alert alert-warning" role="alert" id="temp" align="center">loading...</div>
+        </div>
+    </div>
+
+    <div class="d-grid gap-2 col-9 mx-auto" id="main">
+    </div>
+</body>
+</html>
